@@ -1,3 +1,4 @@
+package dir;
 public class Java5 {
   //mainメソッド
   public static void main(String[] args){
