@@ -5,6 +5,7 @@ public class Sample {
      this.num = num;
   }
 
+
   // public boolean equals(Sample obj){
   //   if (obj == null){
   //      return false;

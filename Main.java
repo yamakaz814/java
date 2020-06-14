@@ -1,64 +1,51 @@
-public class Main {
-  public static void main(String[] args) {
-    // Object a = new Sample(10);
-    // Object b = new Sample(10);
-    // System.out.println(a.equals(b));
-    // Integer ab =100;
-    // System.out.println(ab);
-    // ab =1000;
-    // System.out.println(ab);
+public class Main{
+  public static void main(String[] args){
+    String hoge = "foo";//文字列fooをメモリに保持
+    String fuga = "foo";//文字列fooをメモリに保持
+    System.out.println(hoge == fuga);//同じ参照を持つためtrueが返る
+    hoge += "bar";//barを加えた新しい文字列のインスタンスが生成
+    fuga += "bar";//barを加えた新しい文字列のインスタンスが生成 上とは別
+    System.out.println(hoge == fuga);//文字列は同じでも異なるインスタンスの参照を持つためfalseが返る
+
+    // String str = "abc";
+    // String str = "a";
+    // str += "de";
+
+    // System.out.print(str);
+
     
-  //   String array [][] = {{"a","b"},{"z"},{"c","d","e"}};
-  //   int total = 0;
-  //   for (String[] tmp:array){
-  //       total += tmp.length;
-  //   }
-  //   System.out.println(total);
-
-  //配列の複製
-  // int arrayA [] = {1,2,3};
-  // int arrayB [] = arrayA.clone();
-
-  // System.out.println(arrayA == arrayB);
-  // System.out.println(arrayA[0] == arrayB[0]);
-
-  // do while 下記のコードは無限ループ
-  // int a = 0;
-  // while (a < 5){
-  //   do{
-  //     a++;
-  //     System.out.println(a);
-  //   }while (true);
-  // }
-
-  //多次元配列の繰り返し処理
-  // int [][] array = {{1,2},{3,4}};
-  // for (int[] val : array){
-  //   for(int i:val){
-  //     System.out.printf(i + " ");
-  //   }
-  // }
-
-//  String[] array = {"A","B","C"};
-//   for (String str:array){
-//     System.out.println(str);
-//     str = "D";
-//     System.out.println(str);
-
-//   }
-//  int[] array = {1,2,3};
-//   for (int val:array){
-//     System.out.println(val);
-//     val = 4;
-//     System.out.println(val);
-
-//   }
-
-//   int num = 10;
-//   do{
-//     num++;
-//   }while(num++<10);
-//   System.out.println(num);
-
-   }
+  }
 }
+//   interface Worker{
+//     void work();
+//   }
+  
+//   class Empo implements Worker{
+//     public void work(){
+//       System.out.println("work");
+//     }
+//     public void report(){
+//       System.out.println("report");
+//     }
+//   }
+//   class Engin extends Empo{
+//     // public void work(){
+//     //   System.out.println("work2");
+      
+//     // }
+//     public void create(){
+//       System.out.println("create");
+      
+//     }
+//   }
+  
+//   public class Main{
+//   public static void main(String[] args){
+//     Worker a = new Engin();
+//     Empo b = new Engin();
+//     Engin c = new Engin();
+    
+//     b.work();
+
+//   }
+// }
