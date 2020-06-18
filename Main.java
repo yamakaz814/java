@@ -5,9 +5,10 @@ public class Main{
       System.out.println(val);
         
       };
-      f.test("B");
+      f.test("B111");
     }
   }
+  @FunctionalInterface
   interface Function{
     void test(String val);
   }
